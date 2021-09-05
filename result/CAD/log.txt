@@ -1,0 +1,396 @@
+=====================Config=====================
+image_size :  (480, 720)
+batch_size :  14
+test_batch_size :  1
+num_boxes :  13
+use_gpu :  True
+use_multi_gpu :  True
+device_list :  0
+dataset_name :  collective
+data_path :  data/collective
+test_seqs :  [5, 6, 7, 8, 9, 10, 11, 15, 16, 25, 28, 29]
+train_seqs :  [1, 2, 3, 4, 12, 13, 14, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
+backbone :  inv3
+crop_size :  (5, 5)
+train_backbone :  False
+out_size :  (57, 87)
+emb_features :  1056
+num_actions :  6
+num_activities :  5
+actions_loss_weight :  1.0
+actions_weights :  None
+num_frames :  10
+num_before :  5
+num_after :  4
+num_features_boxes :  1024
+num_features_relation :  256
+num_graph :  4
+num_features_gcn :  1024
+gcn_layers :  1
+tau_sqrt :  True
+pos_threshold :  0.2
+train_random_seed :  0
+train_learning_rate :  0.0001
+lr_plan :  {}
+train_dropout_prob :  0.2
+weight_decay :  0.01
+max_epoch :  50
+test_interval_epoch :  1
+training_stage :  2
+stage1_model_path :  /home/computer/zkj/GA/Group-Activity-Recognition-master/result/[Collective_stage1_stage1]<2021-06-01_14-40-03>/stage1_epoch24_88.84%.pth
+test_before_train :  False
+exp_note :  Collective_stage2
+exp_name :  [Collective_stage2_stage2]<2021-08-31_12-55-46>
+result_path :  result/[Collective_stage2_stage2]<2021-08-31_12-55-46>
+log_path :  result/[Collective_stage2_stage2]<2021-08-31_12-55-46>/log.txt
+======================End=======================
+
+Train at epoch #1
+Group Activity Accuracy: 93.70%, Loss: 0.58072, Using 87.0 seconds
+
+====> Test at epoch #1
+Group Activity Accuracy: 65.23%, Loss: 2.13945, Using 104.0 seconds
+Best group activity accuracy: 65.23% at epoch #1.
+
+Train at epoch #2
+Group Activity Accuracy: 98.00%, Loss: 0.13721, Using 89.2 seconds
+
+====> Test at epoch #2
+Group Activity Accuracy: 76.21%, Loss: 2.13011, Using 104.8 seconds
+Best group activity accuracy: 76.21% at epoch #2.
+
+Train at epoch #3
+Group Activity Accuracy: 97.94%, Loss: 0.15071, Using 89.5 seconds
+
+====> Test at epoch #3
+Group Activity Accuracy: 73.59%, Loss: 2.61133, Using 104.6 seconds
+Best group activity accuracy: 76.21% at epoch #2.
+
+Train at epoch #4
+Group Activity Accuracy: 98.97%, Loss: 0.11426, Using 90.2 seconds
+
+====> Test at epoch #4
+Group Activity Accuracy: 76.34%, Loss: 2.32761, Using 104.6 seconds
+Best group activity accuracy: 76.34% at epoch #4.
+
+Train at epoch #5
+Group Activity Accuracy: 99.08%, Loss: 0.08918, Using 89.9 seconds
+
+====> Test at epoch #5
+Group Activity Accuracy: 76.60%, Loss: 2.13627, Using 104.9 seconds
+Best group activity accuracy: 76.60% at epoch #5.
+
+Train at epoch #6
+Group Activity Accuracy: 97.77%, Loss: 0.13028, Using 89.6 seconds
+
+====> Test at epoch #6
+Group Activity Accuracy: 79.08%, Loss: 2.29134, Using 104.4 seconds
+Best group activity accuracy: 79.08% at epoch #6.
+
+Train at epoch #7
+Group Activity Accuracy: 99.31%, Loss: 0.05894, Using 89.2 seconds
+
+====> Test at epoch #7
+Group Activity Accuracy: 85.62%, Loss: 2.10046, Using 104.6 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #8
+Group Activity Accuracy: 98.63%, Loss: 0.08445, Using 89.5 seconds
+
+====> Test at epoch #8
+Group Activity Accuracy: 76.08%, Loss: 3.41759, Using 104.3 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #9
+Group Activity Accuracy: 99.37%, Loss: 0.08750, Using 89.8 seconds
+
+====> Test at epoch #9
+Group Activity Accuracy: 82.22%, Loss: 2.33023, Using 104.5 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #10
+Group Activity Accuracy: 98.85%, Loss: 0.07855, Using 89.7 seconds
+
+====> Test at epoch #10
+Group Activity Accuracy: 81.31%, Loss: 2.10246, Using 104.3 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #11
+Group Activity Accuracy: 99.37%, Loss: 0.05440, Using 89.5 seconds
+
+====> Test at epoch #11
+Group Activity Accuracy: 85.49%, Loss: 2.16687, Using 104.6 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #12
+Group Activity Accuracy: 98.57%, Loss: 0.08002, Using 90.0 seconds
+
+====> Test at epoch #12
+Group Activity Accuracy: 76.86%, Loss: 2.22268, Using 104.8 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #13
+Group Activity Accuracy: 98.91%, Loss: 0.07810, Using 89.5 seconds
+
+====> Test at epoch #13
+Group Activity Accuracy: 71.24%, Loss: 3.89586, Using 104.5 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #14
+Group Activity Accuracy: 99.26%, Loss: 0.08366, Using 89.6 seconds
+
+====> Test at epoch #14
+Group Activity Accuracy: 81.83%, Loss: 3.14880, Using 104.6 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #15
+Group Activity Accuracy: 99.83%, Loss: 0.03405, Using 88.6 seconds
+
+====> Test at epoch #15
+Group Activity Accuracy: 83.14%, Loss: 2.48964, Using 104.6 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #16
+Group Activity Accuracy: 99.03%, Loss: 0.09254, Using 89.8 seconds
+
+====> Test at epoch #16
+Group Activity Accuracy: 77.39%, Loss: 2.17326, Using 104.7 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #17
+Group Activity Accuracy: 99.54%, Loss: 0.04073, Using 89.5 seconds
+
+====> Test at epoch #17
+Group Activity Accuracy: 72.03%, Loss: 3.39724, Using 104.6 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #18
+Group Activity Accuracy: 98.74%, Loss: 0.07548, Using 89.0 seconds
+
+====> Test at epoch #18
+Group Activity Accuracy: 74.12%, Loss: 2.83480, Using 104.4 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #19
+Group Activity Accuracy: 99.31%, Loss: 0.04178, Using 88.6 seconds
+
+====> Test at epoch #19
+Group Activity Accuracy: 85.62%, Loss: 2.69288, Using 104.6 seconds
+Best group activity accuracy: 85.62% at epoch #7.
+
+Train at epoch #20
+Group Activity Accuracy: 98.63%, Loss: 0.10365, Using 89.4 seconds
+
+====> Test at epoch #20
+Group Activity Accuracy: 86.93%, Loss: 1.71029, Using 104.4 seconds
+Best group activity accuracy: 86.93% at epoch #20.
+
+Train at epoch #21
+Group Activity Accuracy: 99.66%, Loss: 0.04481, Using 89.1 seconds
+
+====> Test at epoch #21
+Group Activity Accuracy: 75.03%, Loss: 3.96048, Using 104.5 seconds
+Best group activity accuracy: 86.93% at epoch #20.
+
+Train at epoch #22
+Group Activity Accuracy: 99.54%, Loss: 0.04380, Using 91.0 seconds
+
+====> Test at epoch #22
+Group Activity Accuracy: 78.30%, Loss: 3.01287, Using 104.3 seconds
+Best group activity accuracy: 86.93% at epoch #20.
+
+Train at epoch #23
+Group Activity Accuracy: 99.71%, Loss: 0.03164, Using 89.6 seconds
+
+====> Test at epoch #23
+Group Activity Accuracy: 78.04%, Loss: 2.28819, Using 105.1 seconds
+Best group activity accuracy: 86.93% at epoch #20.
+
+Train at epoch #24
+Group Activity Accuracy: 99.14%, Loss: 0.07540, Using 88.7 seconds
+
+====> Test at epoch #24
+Group Activity Accuracy: 88.50%, Loss: 2.57853, Using 104.6 seconds
+Best group activity accuracy: 88.50% at epoch #24.
+
+Train at epoch #25
+Group Activity Accuracy: 99.20%, Loss: 0.06178, Using 90.2 seconds
+
+====> Test at epoch #25
+Group Activity Accuracy: 78.56%, Loss: 2.38779, Using 104.5 seconds
+Best group activity accuracy: 88.50% at epoch #24.
+
+Train at epoch #26
+Group Activity Accuracy: 99.20%, Loss: 0.05824, Using 89.6 seconds
+
+====> Test at epoch #26
+Group Activity Accuracy: 84.18%, Loss: 2.22313, Using 104.8 seconds
+Best group activity accuracy: 88.50% at epoch #24.
+
+Train at epoch #27
+Group Activity Accuracy: 99.37%, Loss: 0.05266, Using 88.2 seconds
+
+====> Test at epoch #27
+Group Activity Accuracy: 87.45%, Loss: 2.03910, Using 104.3 seconds
+Best group activity accuracy: 88.50% at epoch #24.
+
+Train at epoch #28
+Group Activity Accuracy: 98.85%, Loss: 0.07540, Using 89.5 seconds
+
+====> Test at epoch #28
+Group Activity Accuracy: 89.41%, Loss: 1.43237, Using 104.4 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #29
+Group Activity Accuracy: 99.71%, Loss: 0.04065, Using 87.2 seconds
+
+====> Test at epoch #29
+Group Activity Accuracy: 77.65%, Loss: 2.61109, Using 104.2 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #30
+Group Activity Accuracy: 99.54%, Loss: 0.04376, Using 89.3 seconds
+
+====> Test at epoch #30
+Group Activity Accuracy: 87.06%, Loss: 1.86132, Using 104.3 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #31
+Group Activity Accuracy: 99.43%, Loss: 0.04400, Using 89.1 seconds
+
+====> Test at epoch #31
+Group Activity Accuracy: 78.95%, Loss: 2.68067, Using 104.5 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #32
+Group Activity Accuracy: 98.22%, Loss: 0.10458, Using 88.7 seconds
+
+====> Test at epoch #32
+Group Activity Accuracy: 79.08%, Loss: 1.96290, Using 104.4 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #33
+Group Activity Accuracy: 99.60%, Loss: 0.03569, Using 89.4 seconds
+
+====> Test at epoch #33
+Group Activity Accuracy: 73.20%, Loss: 2.84829, Using 105.1 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #34
+Group Activity Accuracy: 99.66%, Loss: 0.03101, Using 89.0 seconds
+
+====> Test at epoch #34
+Group Activity Accuracy: 76.60%, Loss: 2.54604, Using 105.2 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #35
+Group Activity Accuracy: 99.66%, Loss: 0.04273, Using 89.4 seconds
+
+====> Test at epoch #35
+Group Activity Accuracy: 81.18%, Loss: 1.99700, Using 104.9 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #36
+Group Activity Accuracy: 98.85%, Loss: 0.08862, Using 88.5 seconds
+
+====> Test at epoch #36
+Group Activity Accuracy: 79.22%, Loss: 2.06765, Using 105.2 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #37
+Group Activity Accuracy: 99.60%, Loss: 0.03909, Using 88.7 seconds
+
+====> Test at epoch #37
+Group Activity Accuracy: 60.52%, Loss: 2.94187, Using 104.7 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #38
+Group Activity Accuracy: 98.68%, Loss: 0.08355, Using 89.3 seconds
+
+====> Test at epoch #38
+Group Activity Accuracy: 86.27%, Loss: 1.70376, Using 104.9 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #39
+Group Activity Accuracy: 99.14%, Loss: 0.05215, Using 89.2 seconds
+
+====> Test at epoch #39
+Group Activity Accuracy: 73.99%, Loss: 2.64481, Using 105.2 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #40
+Group Activity Accuracy: 99.71%, Loss: 0.04613, Using 88.9 seconds
+
+====> Test at epoch #40
+Group Activity Accuracy: 75.42%, Loss: 2.95773, Using 104.9 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #41
+Group Activity Accuracy: 99.71%, Loss: 0.03692, Using 88.8 seconds
+
+====> Test at epoch #41
+Group Activity Accuracy: 88.24%, Loss: 1.83077, Using 104.9 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #42
+Group Activity Accuracy: 99.20%, Loss: 0.04818, Using 89.0 seconds
+
+====> Test at epoch #42
+Group Activity Accuracy: 84.44%, Loss: 1.77333, Using 104.8 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #43
+Group Activity Accuracy: 99.03%, Loss: 0.06552, Using 89.6 seconds
+
+====> Test at epoch #43
+Group Activity Accuracy: 87.19%, Loss: 1.80869, Using 104.7 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #44
+Group Activity Accuracy: 99.60%, Loss: 0.03128, Using 89.9 seconds
+
+====> Test at epoch #44
+Group Activity Accuracy: 74.77%, Loss: 2.72095, Using 104.7 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #45
+Group Activity Accuracy: 99.26%, Loss: 0.06008, Using 90.6 seconds
+
+====> Test at epoch #45
+Group Activity Accuracy: 83.53%, Loss: 1.62334, Using 104.8 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #46
+Group Activity Accuracy: 99.89%, Loss: 0.02728, Using 91.6 seconds
+
+====> Test at epoch #46
+Group Activity Accuracy: 85.10%, Loss: 1.90082, Using 104.8 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #47
+Group Activity Accuracy: 99.89%, Loss: 0.03154, Using 90.1 seconds
+
+====> Test at epoch #47
+Group Activity Accuracy: 87.19%, Loss: 1.94854, Using 104.7 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #48
+Group Activity Accuracy: 99.48%, Loss: 0.05224, Using 89.9 seconds
+
+====> Test at epoch #48
+Group Activity Accuracy: 89.41%, Loss: 1.37611, Using 104.6 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #49
+Group Activity Accuracy: 99.66%, Loss: 0.03342, Using 89.8 seconds
+
+====> Test at epoch #49
+Group Activity Accuracy: 85.23%, Loss: 1.83703, Using 104.7 seconds
+Best group activity accuracy: 89.41% at epoch #28.
+
+Train at epoch #50
+Group Activity Accuracy: 98.34%, Loss: 0.09752, Using 88.6 seconds
+
+====> Test at epoch #50
+Group Activity Accuracy: 74.90%, Loss: 2.33401, Using 104.5 seconds
+Best group activity accuracy: 89.41% at epoch #28.
